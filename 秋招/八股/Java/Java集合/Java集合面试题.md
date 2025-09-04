@@ -31,3 +31,11 @@
 ### ArrayList的扩容机制说一下
 
 ### 线程安全的 List， CopyonWriteArraylist是如何实现线程安全的
+
+## Map
+
+### 如何对map进行快速遍历？
+
+### HashMap实现原理介绍一下？
+
+### 了解的哈希冲突解决方法有哪些？
