@@ -12,7 +12,17 @@
 // @lc code=start
 class Solution {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
-        
+        int ans = 0, last = -1;
+        for(int s: timeSeries){
+            int e = s + duration - 1;
+            if(last < s){
+                ans += duration;
+            }else{
+                ans += e - last;
+            }
+            last = e;
+        }
+        return ans;
     }
 }
 // @lc code=end
